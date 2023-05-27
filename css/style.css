@@ -1,0 +1,311 @@
+:root {
+  --prymarry-text-color: #ffffff;
+  --secondary-text-color: #f2f2f2;
+  --prymarry-font-familly: 'Roboto', sans-serif;
+  --acsent-color: #c8a35f;
+}
+
+h1,
+h2 {
+  text-transform: uppercase;
+}
+
+body {
+  color: var(--prymarry-text-color);
+  font-family: var(--prymarry-font-familly);
+  background-color: #2f343a;
+}
+
+.container {
+  width: 1141px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.05em;
+}
+
+.section {
+  padding-top: 120px;
+}
+
+/* Обнуление */
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--prymarry-text-color);
+}
+
+button {
+  display: block;
+}
+
+/* ------------------ШАПКА-САЙТА----------------- */
+
+/* ---------ГЕОМЕТРИЯ-ШАПКИ-САЙТА--------------------- */
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.list-logo-offise {
+  display: flex;
+  gap: 64px;
+
+  align-items: center;
+}
+
+.list-nav {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.link-office {
+  position: relative;
+  display: flex;
+  gap: 17px;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 8px;
+}
+
+.link-office::before {
+  position: absolute;
+  right: 162px;
+  pointer-events: none;
+  display: inline-block;
+  content: '';
+  border: 1px solid #f2f2f2;
+
+  width: 0;
+  height: 46px;
+}
+
+/* /////////////////////////ГЕОМЕТРИЯ-ШАПКИ-САЙТА////////////////////////////////// */
+
+/* ---------------------ОФОРМЛЕНИЕ-ТЕКСТА------------------- */
+
+.nav-link {
+  padding: 8px;
+  text-transform: uppercase;
+}
+
+/* -------------------------ГЕРОЙ------------------------- */
+
+.section-hero {
+  background-image: url(../image/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  padding-bottom: 50px;
+}
+
+.title-hiro {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  margin-bottom: 45px;
+}
+
+.text-hiro {
+  width: 777px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  margin-bottom: 185px;
+}
+
+.btn-hero {
+  width: 18px;
+  height: 30px;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
+
+/* ------------------ГРУЗОПЕРЕВОЗКИ В ЕВРОПУ------------------------- */
+
+.container-europe {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-europe {
+  position: relative;
+  padding-bottom: 120px;
+}
+
+.bg-block {
+  position: absolute;
+  top: 0px;
+  width: 755px;
+  height: 561px;
+  background-color: #393f47;
+}
+
+/* -----------------------ЛЕВЫЙ КОНТЕНТ ЕВРОПА----------------------- */
+
+.title-europe {
+  width: 445px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.22;
+  letter-spacing: 0.05em;
+
+  margin-bottom: 30px;
+}
+
+.title-europe::before {
+  content: '';
+  display: inline-block;
+  width: 90px;
+  height: 6px;
+  background-color: var(--acsent-color);
+
+  margin-bottom: 40px;
+}
+
+.text-europe {
+  width: 445px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+  margin-bottom: 50px;
+  text-align: start;
+}
+
+.btn-europe {
+  min-width: 220px;
+  min-height: 55px;
+  background-color: var(--acsent-color);
+  text-align: center;
+  border: none;
+  cursor: pointer;
+
+  color: var(--prymarry-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.56;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  transition: all 250ms linear;
+}
+
+.left-contant-europe {
+  position: relative;
+}
+
+/* -----------------------------ПРАВЫЙ КОНТЕНТ ЕВРОПА----------------------------------- */
+
+.button {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  min-width: 161px;
+  min-height: 20px;
+
+  color: var(--acsent-color);
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  color: var(--acsent-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  transition: all 250ms linear;
+  z-index: 100;
+}
+
+.forward-button {
+  margin-bottom: 245px;
+}
+
+.back-button::before {
+  content: '\27F5';
+  display: inline-block;
+
+  font-size: 50px;
+
+  transform: translatey(-15%);
+}
+
+.forward-button::after {
+  content: '\27F6';
+  display: inline-block;
+  font-weight: 400;
+  font-size: 50px;
+
+  transform: translatey(-15%);
+}
+
+.button:hover,
+.button:focus {
+  color: var(--prymarry-text-color);
+}
+
+.img-track {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-60%, -50%);
+  z-index: 10;
+}
+
+.bg-block-right {
+  position: absolute;
+  right: 0;
+  top: 0px;
+  width: 755px;
+  height: 561px;
+  background-color: #393f47;
+}
+
+.right-contant-europ {
+  position: relative;
+  z-index: 100;
+}
